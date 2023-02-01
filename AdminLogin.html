@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<script type="text/javascript" src="stylelogin.js"></script>
+	<style type="text/css">
+		
+   .field{
+   	background-color:#dce6ef ;
+   	border-color: black;
+   	margin-left: 450px;
+   	margin-right: 450px;
+   }
+  	.headding{
+		 color:#FF5733;
+		
+		 width: 70%;
+	}
+   input[type=submit], input[type= reset]{
+   	      background-color:green;
+          padding: 8px;
+          color: white;
+          width: 20%
+      }
+
+   input[type=text] ,input[type=password]{
+  width: 50%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+
+   body{
+	 padding-top: 140px;
+	 
+	}
+	
+</style>
+</head>
+<body>
+	<fieldset class="field">
+	<center>
+		
+		<h1 class="headding">Admin Login Panel</h1>
+		<form  action="Adminlogin.php" method ="post" name="myform" onsubmit="return validateform()" >
+			
+			<label>Admin Username:-</label>
+			 
+                 <input type="text" name="username" required placeholder="Enter Name"><br><br>
+		    <label>Admin Password:-</label>
+            <input type="password" name="password" placeholder="Enter password"><br><br>
+			<input type="submit" value="sign-in">
+			<input type="reset"  value="Reset">
+            
+
+        </form>
+		</center>
+		</fieldset>
+</body>
+</html>

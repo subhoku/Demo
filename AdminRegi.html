@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Registration Form</title>
+    <script type="text/javascript" src="RegisterValidation.js"></script>
+	<link rel="stylesheet" type="text/css" href="Adminregistcssfile.css">
+	<style type="text/css" ></style>
+
+</head>
+ <body>
+ 	
+<fieldset class="field">
+	<center>
+		<form  action="AdminRegi.php" method= "post" name="myform"  onsubmit = "return  !! (validateemail() & validateform() & matchpass() & numbervalidate())">
+		
+		<h1 class="headding" >Admin Registration Panel</h1><br></div>
+		     
+		     <label>FirstName:-</label>
+		     <input type="text" name="fname" required placeholder="Enter Name"><br><br>
+             <label>LastName:-</label>
+             <input type="text" name="lastname" required placeholder="Enter lastname"><br><br>
+             <label> Emailid  :- </label>
+			 <input  type="text" name="email"  placeholder="Enter email"><br><br>
+			 <label>Username :-</label>
+			 <input  type="text" name="Username"  required placeholder="Enter Username"><br><br>
+			 <label>Enter Password:-</label>
+			 <input  type="password"  name="password" placeholder="Enter password"><br><br>
+			 <label>ConfirmPassword:-</label>
+			 <input  type="password" name="conformpassword" placeholder="Enter conform password"><br><br>
+			 <label> Choose your Gender:-</label><br>
+             <div class="gen">
+                 <label for="male">Male</label>
+                 <input type="radio" name="gender" id="male" value="male">
+                 <label for="female">Female</label>
+                 <input type="radio" name="gender" id="female" value="female">
+             </div><br><br>
+             <label>Mobile Number:-</label>
+             <span id="numloc"></span><br>
+			 <input  type="text" name="num" placeholder="Enter mobileno"  ><br><br>
+			 <label>City:-</label>
+			 <input  type="text" name="City"  placeholder="Enter city"><br><br>
+			 <label>Addreass:-</label>
+			 <textarea rows="7"cols="75"> </textarea><br><br><br>
+		     <input  class ="button" type="submit" value="Register">
+			 <input class="button" type="reset" value="Reset">
+
+			 </form>
+			</center>
+</fieldset>
+</div>
+</body>
+</html>
